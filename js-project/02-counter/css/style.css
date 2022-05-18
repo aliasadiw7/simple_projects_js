@@ -1,0 +1,17 @@
+@import url(reset.css);
+@import url(font.css);
+/* site style */
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.main {
+    font-size: 30px;
+}
+.count {
+    font-size: 100px;
+}

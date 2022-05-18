@@ -1,0 +1,143 @@
+@import url(reset.css);
+@import url(font.css);
+/* site style */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(210, 36%, 96%) !important;
+  color: hsl(209, 61%, 16%) !important;
+}
+h4 {
+    font-family: "Roboto", sans-serif !important;
+    letter-spacing: 0.1rem !important;
+    text-transform: capitalize !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.75rem !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+.title {
+  margin: 1rem 0 2rem 0;
+}
+.text1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.h {
+  display: inline-block;
+  height: 0.25rem;
+  width: 5rem;
+  background-color: hsl(205, 78%, 60%);
+  position: relative;
+  top: -20px;
+}
+.main {
+  text-align: center;
+  width: 80wh;
+  max-width: 620px;
+}
+.review {
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  transition: all 0.3s linear;
+  text-align: center;
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: hsl(205, 78%, 60%);
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.5rem;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  background: hsl(205, 78%, 60%);
+  border-radius: 50%;
+  transform: translateY(25%);
+  place-items: center;
+  color: #fff;
+}
+#person-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+}
+#author {
+  margin-bottom: 0.25rem;
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+}
+.prev-btn, .next-btn {
+    font-size: 1.25rem;
+    color: hsl(205, 90%, 76%);
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.prev-btn:hover, .next-btn:hover {
+    color: hsl(205, 78%, 60%);
+}
+.random-bten {
+    margin-top: 0.5rem;
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border-color: var(--clr-primary-5);
+    cursor: pointer;
+  }
+.random-btn {
+    margin-top: 0.5rem;
+    background: hsl(205, 100%, 96%);
+    color: hsl(205, 90%, 76%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    transition: all 0.3s linear;
+    border-color: hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+.random-btn:hover {
+    background: hsl(205, 78%, 60%);
+    color: hsl(205, 86%, 17%);
+  }

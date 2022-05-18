@@ -1,0 +1,36 @@
+@import url(reset.css);
+@import url(font.css);
+/* site style */
+
+body {
+    
+}
+.head {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 200px;
+    color: hsl(205, 78%, 60%);
+}
+.header span:hover {
+    color: hsl(205, 72%, 37%);
+}
+.background {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tex {
+    padding: 20px;
+    border-radius: 5px;
+}
+.tex span{
+    display: inline-block;
+}
+.main {
+    text-align: center;
+}
